@@ -10,10 +10,8 @@ def sniff(interface):
     # filter = Filter packet using BPF syntax (Not implemented. Used scapy.layers.http instead to capture http packets)
     scapy.sniff(iface=interface, store=False, prn=process_sniffed_packet)
 
-
 def get_url(packet):
     return packet[http.HTTPRequest].Host + packet[http.HTTPRequest].Path
-
 
 def get_login_info(packet):
     if packet.haslayer(scapy.Raw):
@@ -22,7 +20,6 @@ def get_login_info(packet):
         for key in keywords:
             if key in load:
                 return load
-
 
 def process_sniffed_packet(packet):
     # To find whether sniffed packet has http data layer

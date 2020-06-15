@@ -47,7 +47,6 @@ def scan(ip):
     # scapy.ls(scapy.ARP())
     # scapy.ls(scapy.Ether())
 
-
 def print_result(results_list):
     if results_list.__len__()!=0:
         print("IP\t\t\tMAC Address")
