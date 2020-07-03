@@ -12,7 +12,7 @@ class Listener:
         listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         # Changing the options to REUSE the above socket 
-        # arg1 = level
+        # arg1 = level (SOL_SOCKET is the socket layer itself, which is application independent)
         # arg2 = option
         # arg3 = value of option
         listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -75,6 +75,8 @@ class Listener:
     def run(self):
         while True:
             command = raw_input(">> ")
+            # For python3:
+            # command = input(">> ")
             command = command.split(" ")
         
             try:    
