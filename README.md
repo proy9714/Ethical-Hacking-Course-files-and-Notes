@@ -1,5 +1,4 @@
 <h1>Python for Ethical Hacking </h1>
-<hr>
 
 <h3>Various files to implement Ethical Hacking in the Linux environment.</h3>
 
