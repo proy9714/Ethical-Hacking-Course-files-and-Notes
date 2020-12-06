@@ -1,10 +1,10 @@
-<h1>Python for Ethical Hacking </h1>
+# Python for Ethical Hacking
 
-<h3>Various files to implement Ethical Hacking in the Linux environment.</h3>
+## Various files to implement Ethical Hacking in the Linux environment.
 
-<h5> All files written in python2. To run python3 make necessary changes </h5>
+### All files written in python2. To run python3 make necessary changes </h5>
 
-<h3> Topics include: </h3>
+## Topics include: 
 <ul>
   <li>MAC address changer</li>
   <li>ARP spoofer</li>
