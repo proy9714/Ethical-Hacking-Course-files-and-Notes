@@ -9,3 +9,4 @@ arp (use sudo)
 netdiscover (use sudo)
 netstat
 nmap - Scanning for ports
+man {{command}} - manual of command
