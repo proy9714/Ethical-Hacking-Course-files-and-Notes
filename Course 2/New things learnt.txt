@@ -1,0 +1,11 @@
+nslookup - Lookup ip address
+whois - ip/domain details
+whatweb - web scanner to scan hosts
+theHarvester - email gathering
+hunter.io - website for email gathering
+redhawk - website information gathering
+sherlock - find accounts across social media using username
+arp (use sudo)
+netdiscover (use sudo)
+netstat
+nmap - Scanning for ports
