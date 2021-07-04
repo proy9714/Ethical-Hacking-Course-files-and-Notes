@@ -4,16 +4,16 @@
 ## All files written in python2. To run python3 make necessary changes
 
 ## Topics include: 
-  -MAC address changer
-  -ARP spoofer
-  -DNS spoofer
-  -Keylogger
-  -Reverse Backdoor generators
-  -General Vulnerability scanning
-  -Wifi password extractor
-  -Packet Sniffers
-  -Web crawlers/Spiders
-  etc...
+- MAC address changer
+- ARP spoofer
+- DNS spoofer
+- Keylogger
+- Reverse Backdoor generators
+- General Vulnerability scanning
+- Wifi password extractor
+- Packet Sniffers
+- Web crawlers/Spiders
+etc...
 
 
 ## To resolve queries about socket programming, specially AF_INET and SOCK_STREAM refer to :
