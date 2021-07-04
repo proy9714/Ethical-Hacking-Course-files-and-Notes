@@ -1,9 +1,10 @@
 # Python for Ethical Hacking
   Various files to implement Ethical Hacking in the Linux environment.
 
-## All files written in python2. To run python3 make necessary changes
+*All files written in python2. To run python3 make necessary changes*
 
-## Topics include: 
+**Topics include:**
+ 
 - MAC address changer
 - ARP spoofer
 - DNS spoofer
