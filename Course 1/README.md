@@ -1,9 +1,9 @@
 # Python for Ethical Hacking
   Various files to implement Ethical Hacking in the Linux environment.
 
-All files written in python2. To run python3 make necessary changes </h5>
+## All files written in python2. To run python3 make necessary changes
 
-# Topics include: 
+## Topics include: 
 <ul>
   <li>MAC address changer</li>
   <li>ARP spoofer</li>
@@ -16,3 +16,8 @@ All files written in python2. To run python3 make necessary changes </h5>
   <li>Web crawlers/Spiders</li>
    etc...
 </ul>
+
+
+## To resolve queries about socket programming, specially AF_INET and SOCK_STREAM refer to :
+  [Simple explanation](https://stackoverflow.com/questions/5815675/what-is-sock-dgram-and-sock-stream)
+  [Much more detailed (very technical)](https://www.cs.uic.edu/~troy/fall99/eecs471/sockets.html)
