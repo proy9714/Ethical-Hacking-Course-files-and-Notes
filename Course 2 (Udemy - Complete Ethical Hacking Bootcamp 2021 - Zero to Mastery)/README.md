@@ -29,6 +29,7 @@
 ---
 
 ***Nmap options***
+
 	-sS : Syn Scan, half open scanning...detecting replies from syn tcp packets
 	-sF : Fyn scan (?)
 	-sV : Version number
