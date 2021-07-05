@@ -48,17 +48,16 @@
 | Command | Description |
 | --- | --- |
 | nmap scripts | For finding vulnerabilities, explore documentation of nmap on internet |
+| searchsploit | exploiting vulnerabilities |
+| Nessus | Software for vulnerability analysis *(Only local ip addresses, atleast with the free version)* |
+
+***Nmap Scripts***
 
 	nmap scripts are in directory: usr/share/nmap/scripts
 	
 	nmap --script scriptgroup
 
 	Script help: nmap --script-help scriptname 
-
-| Command | Description |
-| --- | --- |
-| searchsploit | exploiting vulnerabilities |
-| Nessus | Software for vulnerability analysis *(Only local ip addresses, atleast with the free version)* |
 
 # Exploitation and Gaining access
 
@@ -77,10 +76,14 @@ Exploiting stages: cd modules
 | nops | Instruction for the processor to do nothing. Useful for buffer overflow. *NOP - (No Operation)* |
 | payloads | For delivering payloads to target |
 | post | Post exploitation. For gathering or stealing information etc. |
-	
+
+
 ***payloads***
-- singles : Standalone payload
-- stagers : Setting up network connection between target and attacker. Designed to be small and reliable.
-- stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
+	
+	singles : Standalone payload
+	
+	stagers : Setting up network connection between target and attacker. Designed to be small and reliable.
+	
+	stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
 
 > *.rb : Extension for ruby* 
