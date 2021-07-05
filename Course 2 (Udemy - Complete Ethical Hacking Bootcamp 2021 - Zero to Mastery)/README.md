@@ -59,6 +59,6 @@
 
 	Script help: nmap --script-help scriptname 
 
+| --- | --- |
 | searchsploit | exploiting vulnerabilities |
-
 | Nessus | Software for vulnerability analysis (Only local ip addresses, atleast with the free version) |
