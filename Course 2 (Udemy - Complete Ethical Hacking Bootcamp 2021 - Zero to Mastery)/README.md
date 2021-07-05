@@ -68,10 +68,10 @@
 
 # Exploitation and Gaining access
 
-**Metasploit Framework**
+## Metasploit Framework
 
-> Navigating to Metasploit framework directory: cd /user/share/metaspolit-framework
-> Exploiting stages: cd modules
+Navigating to Metasploit framework directory: cd /user/share/metaspolit-framework
+Exploiting stages: cd modules
 
 | Metasploit Modules | Description |
 | --- | --- |
