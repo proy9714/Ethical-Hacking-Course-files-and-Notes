@@ -71,9 +71,10 @@
 ## Metasploit Framework
 
 Starting Metasploit Framework: **msfconsole**
+
 Navigating to Metasploit framework directory: cd /user/share/metaspolit-framework
 
-Exploiting stages: cd modules
+Types of modules are in : /user/share/metaspolit-framework/modules
 
 | Metasploit Modules | Description |
 | --- | --- |
@@ -95,11 +96,13 @@ Exploiting stages: cd modules
 	
 	stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
 
->*bind : Direct connection*
+***Note***
 
->*reverse : reverse connection*
+	*bind : Direct connection*
+	
+	*reverse : reverse connection*
 
-> *.rb : Extension for ruby* 
+	*.rb : Extension for ruby* 
 
 > ***Can run regular terminal commands within metasploit as well***
 
