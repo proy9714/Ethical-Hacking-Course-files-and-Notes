@@ -25,6 +25,10 @@
 | netdiscover | For discovering available networks/ips |
 | netstat | (Obsolete) Use ss |
 | nmap | Scanning for ports |
+
+---
+
+***Nmap options***
 	-sS : Syn Scan, half open scanning...detecting replies from syn tcp packets
 	-sF : Fyn scan (?)
 	-sV : Version number
@@ -50,6 +54,8 @@
 | nmap scripts | For finding vulnerabilities, explore documentation of nmap on internet |
 | searchsploit | exploiting vulnerabilities |
 | Nessus | Software for vulnerability analysis *(Only local ip addresses, atleast with the free version)* |
+
+---
 
 ***Nmap Scripts***
 
@@ -77,6 +83,7 @@ Exploiting stages: cd modules
 | payloads | For delivering payloads to target |
 | post | Post exploitation. For gathering or stealing information etc. |
 
+---
 
 ***payloads***
 	
