@@ -1,31 +1,33 @@
+locate filename - Outputs the path of concerned filename
+
 # Reconnaissance and Information gathering:
 ---------------------------------------------
 
-nslookup - Lookup ip address
+- nslookup - Lookup ip address
 
-whois - ip/domain details
+- whois - ip/domain details
 
-whatweb - web scanner to scan hosts
+- whatweb - web scanner to scan hosts
 
-theHarvester - email gathering
+- theHarvester - email gathering
 
-hunter.io - website for email gathering
+- hunter.io - website for email gathering
 
-redhawk - website information gathering
+- redhawk - website information gathering
 
-sherlock - find accounts across social media using username
+- sherlock - find accounts across social media using username
 
-arp - manipulate the system arp cache
+- arp - manipulate the system arp cache
 
 
 # SCANNING: 
 -----------------------
 
-netdiscover - For discovering available networks/ips. 
+- netdiscover - For discovering available networks/ips. 
 
-netstat - (Obsolete) Use ss
+- netstat - (Obsolete) Use ss
 
-nmap - Scanning for ports
+- nmap - Scanning for ports
 	-sS : Syn Scan, half open scanning...detecting replies from syn tcp packets
 	-sF : Fyn scan (?)
 	-sV : Version number
@@ -43,18 +45,20 @@ nmap - Scanning for ports
 	-g : Source port (Maybe to bypass firewall)
 	-T : Timing template
 	-F: Fast mode - Scan fewer ports than the default scan
-	
-	nmap scripts - For finding vulnerabilities, explore documentation of nmap on internet
-	nmap scripts are in directory: usr/share/nmap/scripts
-	nmap --script scriptgroup
-	Script help: nmap --script-help scriptname 
 
-man {{command}} - manual of command
+# Vulnerability Analysis
+-----------------------------------
 
-Connect using fpt: ftp target-ip
+Nmap:
+
+* nmap scripts - For finding vulnerabilities, explore documentation of nmap on internet
+
+* nmap scripts are in directory: usr/share/nmap/scripts
+
+* nmap --script scriptgroup
+
+* Script help: nmap --script-help scriptname 
 
 searchsploit - exploiting vulnerabilities
 
-locate filename - Outputs the path of concerned filename
-
-Nessus - Software for vulnerability analysis
+Nessus - Software for vulnerability analysis (Only local ip addresses, atleast with the free version)
