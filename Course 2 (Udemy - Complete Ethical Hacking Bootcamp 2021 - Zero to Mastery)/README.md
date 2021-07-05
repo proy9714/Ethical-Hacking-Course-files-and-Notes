@@ -98,11 +98,11 @@ Types of modules are in : /user/share/metaspolit-framework/modules
 
 ***Note***
 
-	*bind : Direct connection*
+	bind : Direct connection
 	
-	*reverse : reverse connection*
+	reverse : reverse connection
 
-	*.rb : Extension for ruby* 
+	.rb : Extension for ruby 
 
 > ***Can run regular terminal commands within metasploit as well***
 
@@ -110,7 +110,7 @@ Types of modules are in : /user/share/metaspolit-framework/modules
 | --- | --- |
 | show *option* | Shows all option |
 |show *modulename* | Display all available *module options/files* |
-| use *modulename***/***file* | Using a file in a module |
+| use *modulename*/*file* | Using a file in a module |
 | show info | Shows the information and details about a particular module file **(|Run after *use* command)** |
 | show options | Shows module options **(|Run after *use* command)** |
 | show *targets* | Displays all targets which can be exploited |
