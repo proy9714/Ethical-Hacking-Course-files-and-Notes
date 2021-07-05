@@ -70,7 +70,9 @@
 
 ## Metasploit Framework
 
+Starting Metasploit Framework: **msfconsole**
 Navigating to Metasploit framework directory: cd /user/share/metaspolit-framework
+
 Exploiting stages: cd modules
 
 | Metasploit Modules | Description |
@@ -93,4 +95,24 @@ Exploiting stages: cd modules
 	
 	stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
 
+>*bind : Direct connection*
+
+>*reverse : reverse connection*
+
 > *.rb : Extension for ruby* 
+
+> ***Can run regular terminal commands within metasploit as well***
+
+| Metasploit commands | Description |
+| --- | --- |
+| show *option* | Shows all option |
+|show *modulename* | Display all available *module options/files* |
+| use *modulename***/***file* | Using a file in a module |
+| show info | Shows the information and details about a particular module file **(|Run after *use* command)** |
+| show options | Shows module options **(|Run after *use* command)** |
+| show *targets* | Displays all targets which can be exploited |
+| set *option* | Sets a particular option |
+| set *LHOST/RHOST* | Setting LHOST or RHOST ip |
+| show *payloads* | Display possible payloads/ payloads for a particular exploit |
+| set *payload* | Change payload for exploit |
+| set *target* | Set target type *(Not ip, but a type of target for eg. Windows XP)* |
