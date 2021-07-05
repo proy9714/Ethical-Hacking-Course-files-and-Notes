@@ -1,12 +1,10 @@
-# General Commands -
------------------------------ 
+# General Commands
 
 | Command | Description |
 | --- | --- |
 | locate | Outputs the path of concerned filename |
 
-# Reconnaissance and Information gathering:
----------------------------------------------
+# Reconnaissance and Information gathering
 
 | Command | Description |
 | --- | --- |
@@ -20,8 +18,7 @@
 | arp | manipulate the system arp cache |
 
 
-# SCANNING: 
------------------------
+# Scanning
 
 | Command | Description |
 | --- | --- |
@@ -47,7 +44,6 @@
 	-F: Fast mode - Scan fewer ports than the default scan
 
 # Vulnerability Analysis
------------------------------------
 
 | Command | Description |
 | --- | --- |
@@ -59,5 +55,10 @@
 
 	Script help: nmap --script-help scriptname 
 
+| Command | Description |
+| --- | --- |
 | searchsploit | exploiting vulnerabilities |
-| Nessus | Software for vulnerability analysis (Only local ip addresses, atleast with the free version) |
+| Nessus | Software for vulnerability analysis *(Only local ip addresses, atleast with the free version)* |
+
+# Exploitation and Gaining access
+
