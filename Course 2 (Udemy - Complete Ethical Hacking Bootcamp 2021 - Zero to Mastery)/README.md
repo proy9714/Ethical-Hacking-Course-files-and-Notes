@@ -62,13 +62,11 @@
 
 # Exploitation and Gaining access
 
-Metasploit Framework
+**Metasploit Framework**
 
-Navigating to Metasploit framework directory:
-cd /user/share/metaspolit-framework
+Navigating to Metasploit framework directory: cd /user/share/metaspolit-framework
 
-Exploiting stages:
-cd modules
+Exploiting stages: cd modules
 
 | Metasploit Modules | Description |
 | --- | --- |
@@ -77,11 +75,10 @@ cd modules
 | evasion | Generally used to bypass windows defender (Although maybe not very useful now) |
 | exploits | Exploiting vulnerabilities of target system |
 | nops | Instruction for the processor to do nothing. Useful for buffer overflow. *NOP - (No Operation)* |
-| payloads | For delivering payloads to target 
+| payloads | For delivering payloads to target |
 > singles : Standalone payload
 > stagers : Setting up network connection between target and attacker. Designed to be small and reliable.
-> stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells. |
-
+> stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
 | post | Post exploitation. For gathering or stealing information etc. |
 
 > *.rb : Extension for ruby* 
