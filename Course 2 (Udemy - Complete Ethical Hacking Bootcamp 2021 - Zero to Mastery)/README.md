@@ -49,9 +49,9 @@
 # Vulnerability Analysis
 -----------------------------------
 
-Nmap:
-
-* nmap scripts - For finding vulnerabilities, explore documentation of nmap on internet
+| Command | Description |
+| --- | --- |
+| nmap scripts | For finding vulnerabilities, explore documentation of nmap on internet |
 
 * nmap scripts are in directory: usr/share/nmap/scripts
 
@@ -59,6 +59,6 @@ Nmap:
 
 * Script help: nmap --script-help scriptname 
 
-searchsploit - exploiting vulnerabilities
+| searchsploit | exploiting vulnerabilities |
 
-Nessus - Software for vulnerability analysis (Only local ip addresses, atleast with the free version)
+| Nessus | Software for vulnerability analysis (Only local ip addresses, atleast with the free version) |
