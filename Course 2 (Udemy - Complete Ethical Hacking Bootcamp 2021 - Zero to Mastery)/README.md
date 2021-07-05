@@ -53,11 +53,11 @@
 | --- | --- |
 | nmap scripts | For finding vulnerabilities, explore documentation of nmap on internet |
 
-* nmap scripts are in directory: usr/share/nmap/scripts
+	nmap scripts are in directory: usr/share/nmap/scripts
+	
+	nmap --script scriptgroup
 
-* nmap --script scriptgroup
-
-* Script help: nmap --script-help scriptname 
+	Script help: nmap --script-help scriptname 
 
 | searchsploit | exploiting vulnerabilities |
 
