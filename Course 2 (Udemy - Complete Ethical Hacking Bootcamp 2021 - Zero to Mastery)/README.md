@@ -1,23 +1,21 @@
-locate filename - Outputs the path of concerned filename
+# General Commands -
+----------------------------- 
+
+- locate filename - *Outputs the path of concerned filename*
 
 # Reconnaissance and Information gathering:
 ---------------------------------------------
 
-- nslookup - Lookup ip address
-
-- whois - ip/domain details
-
-- whatweb - web scanner to scan hosts
-
-- theHarvester - email gathering
-
-- hunter.io - website for email gathering
-
-- redhawk - website information gathering
-
-- sherlock - find accounts across social media using username
-
-- arp - manipulate the system arp cache
+| Command | Description |
+| --- | --- |
+| nslookup | Lookup ip address |
+| whois | ip/domain details |
+| whatweb | web scanner to scan hosts |
+| theHarvester | email gathering |
+| hunter.io | website for email gathering |
+| redhawk | website information gathering |
+| sherlock | find accounts across social media using username |
+| arp | manipulate the system arp cache |
 
 
 # SCANNING: 
