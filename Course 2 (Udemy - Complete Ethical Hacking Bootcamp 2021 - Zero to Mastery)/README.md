@@ -1,7 +1,9 @@
 # General Commands -
 ----------------------------- 
 
-- locate filename - *Outputs the path of concerned filename*
+| Command | Description |
+| --- | --- |
+| locate | Outputs the path of concerned filename |
 
 # Reconnaissance and Information gathering:
 ---------------------------------------------
@@ -21,11 +23,11 @@
 # SCANNING: 
 -----------------------
 
-- netdiscover - For discovering available networks/ips. 
-
-- netstat - (Obsolete) Use ss
-
-- nmap - Scanning for ports
+| Command | Description |
+| --- | --- |
+| netdiscover | For discovering available networks/ips |
+| netstat | (Obsolete) Use ss |
+| nmap | Scanning for ports |
 	-sS : Syn Scan, half open scanning...detecting replies from syn tcp packets
 	-sF : Fyn scan (?)
 	-sV : Version number
