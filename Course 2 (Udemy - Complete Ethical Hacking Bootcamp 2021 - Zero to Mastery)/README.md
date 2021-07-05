@@ -78,9 +78,9 @@ cd modules
 | exploits | Exploiting vulnerabilities of target system |
 | nops | Instruction for the processor to do nothing. Useful for buffer overflow. *NOP - (No Operation)* |
 | payloads | For delivering payloads to target |
-> singles : Standalone payload
-> stagers : Setting up network connection between target and attacker. Designed to be small and reliable.
-> stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
+	> singles : Standalone payload
+	> stagers : Setting up network connection between target and attacker. Designed to be small and reliable.
+	> stages : Payload components that are downloaded by stagers modules. Can provide advanced features with no size limits, eg. meterpreter shells.
 | post | Post exploitation. For gathering or stealing information etc. |
 
 > *.rb : Extension for ruby* 
