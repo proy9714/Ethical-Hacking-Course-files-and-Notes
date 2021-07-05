@@ -111,7 +111,7 @@ Types of modules are in : /user/share/metaspolit-framework/modules
 | show *option* | Shows all option |
 |show *modulename* | Display all available *module options/files* |
 | use *modulename*/*file* | Using a file in a module |
-| show info | Shows the information and details about a particular module file **(|Run after *use* command)** |
+| show info | Shows the information and details about a particular module file **(Run after *use* command)** |
 | show *options* | Shows module options **(Run after *use* command)** |
 | show *targets* | Displays all targets which can be exploited |
 | set *option* | Sets a particular option |
