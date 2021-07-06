@@ -3,6 +3,11 @@
 | Command | Description |
 | --- | --- |
 | locate | Outputs the path of concerned filename |
+| telnet *ip* | Connect to *ip* via telnet |
+| sudo su | Getting to root |
+| ssh *username@ip* | Connect via ssh to *ip* |
+| hostname | Get the name of the host machine |
+| vncviwere *ip* | Connect to vnc |
 
 # Reconnaissance and Information gathering
 
@@ -37,6 +42,7 @@
 	-A : Aggressive
 	-sn : No port can, like netdiscover
 	-p : port range/ single port scan
+	-p- : Scan all 65535 ports
 	>> filename : to save output to file
 	-oN : Output scan in normal file
 	-f : Small fragmented tcp packets
@@ -102,7 +108,9 @@ Types of modules are in : /user/share/metaspolit-framework/modules
 	
 	reverse : reverse connection
 
-	.rb : Extension for ruby 
+	.rb : Extension for ruby, Generaally exploit files	
+	
+	multi/ : Can be run against multiple OS
 
 > ***Can run regular terminal commands within metasploit as well***
 
@@ -119,3 +127,24 @@ Types of modules are in : /user/share/metaspolit-framework/modules
 | show *payloads* | Display possible payloads/ payloads for a particular exploit |
 | set *payload* | Change payload for exploit |
 | set *target* | Set target type *(Not ip, but a type of target for eg. Windows XP)* |
+| search *software name* | To search for exploit for the software eg: search vdftpd|
+| exploit | Start the exploit |
+| exit | Exit the shell/ End exploit |
+| run | Run a module file |
+| sessions | Check all available shells |
+| sessions -i *session id* | Enter session |
+
+
+## NETCAT
+
+netcat is a simple unix utility which reads and writes data across net‐work connections, using TCP or UDP protocol. In  the  simplest usage, "nc host port" creates a TCP connection to the given port on the given target host. 
+
+| Netcat commands | Description |
+| --- | --- |
+| nc -h | help |
+
+## METERPRETER
+
+| Meterpreter commands | Description |
+| --- | --- |
+| help | Open help |
