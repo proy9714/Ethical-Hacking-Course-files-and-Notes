@@ -8,6 +8,7 @@
 | ssh *username@ip* | Connect via ssh to *ip* |
 | hostname | Get the name of the host machine |
 | vncviwere *ip* | Connect to vnc |
+| getuid | Get user id on windows |
 
 # Reconnaissance and Information gathering
 
@@ -149,4 +150,53 @@ netcat is a simple unix utility which reads and writes data across net‐work co
 | --- | --- |
 | help | Open help |
 
-.
+
+***Eternalblue***
+
+	Exploit smb vulnerability on windows
+
+	Available on metasploit framework
+
+	Works on 64bit windows, Crashes 32bit windows
+
+***DoublePulsar***
+
+	Read details on Rapid7 website
+
+	Can work on both 32bit and 64bit systems
+
+	Obtain from Github
+
+	Copy files to metasploit directory to add it to the framework
+
+	Copy all files to root directory
+
+	Need Wine to run
+
+		Run as root
+
+		sudo dpkg --add-architecture i386
+		
+		apt-get update
+		
+		apt-get install wine32
+
+	Change PROCESSINJECT ot lsass.exe if attack against 64bit machine
+
+	Change TARGETARCHITECTURE to x64 if attack against 64bit machine
+
+	Change payload to windows/x64/meterpreter/reverse_tcp if attack against 64bit machine
+
+***Bluekeep***
+
+	Windows XP to Windows 7 Exploit
+	
+	Port 3389 (RDC : Remote Desktop Protocol) needs to be enabled on target
+
+	To enable RDC on Windows : Control Panel -> System and Settings -> Remote Desktop -> Enable
+
+***Routersploit***
+
+	Hacking router
+
+	Download from Github
