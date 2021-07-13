@@ -1,4 +1,6 @@
-# General Commands
+**JULY 2021**
+
+# General Linux Commands
 
 | Command | Description |
 | --- | --- |
@@ -200,3 +202,70 @@ netcat is a simple unix utility which reads and writes data across net‐work co
 	Hacking router
 
 	Download from Github
+
+## Windows 10
+
+	SMBGhost Vulnerability (CVE 2020 0796)
+
+	Attack for Windows 10 1903 or 1909
+
+	(Can download old versions of windows 10 using RUFUS)
+
+	Crashing windows 10 - Jiansitting (Search on Github!!!)
+
+	Exploiting windows 10 - ZecOps (Search on Github!!!)
+
+
+
+# Gaining Access
+
+## Msfvenom
+
+### For generating payloads
+
+| Msfvenom Commands| Description |
+| --- | --- |
+| msfvenom -h | Help |
+| msfvenom -p | p stands for payload, type of payload |
+| -f | Filetype to be created |
+| -o | Output : Name of file |
+| -a | Architecture eg. x64, x86 |
+| -e | Encoder, can help bypass some antiviruses |
+| -i | Iterations for encoding payload |
+| --platform | eg. windows |
+| -n | append nops |
+| -x | Use another program as template |
+| msfvenom --list *options* | List all available *options* |
+
+***Metasploit listener:***
+
+**exploit/multi/handler** : Handles exploits launched outside of the framework. We run exploit for the *multi/handler* and execute our generated executable on the victim. The *multi/handler* handles the exploit for us and presents us our shell.
+
+***Set the same payload as payload that the target will execute.***
+
+***Virustotal***
+
+*Website*
+
+	To check how many antiviruses can detect a file.
+
+## Veil
+
+(Not installed by default in Kali Linux)
+
+Start command : ***veil***
+
+**Commands are similar to msfconsole**
+
+Run : **resource *rc* file generated**, in msfconsole for listening
+
+**B2E**
+	
+	Tool for converting .bat file to .exe
+	
+	Download from Github. It is an exe file...have to run with wine.
+
+
+## TheFatRat
+
+	
