@@ -1,6 +1,6 @@
 **JULY 2021**
 
-# General Linux Commands
+# General OS Commands
 
 | Command | Description |
 | --- | --- |
@@ -11,6 +11,10 @@
 | hostname | Get the name of the host machine |
 | vncviwere *ip* | Connect to vnc |
 | getuid | Get user id on windows |
+| ps | Lists all processes running on windows |
+| md5sum *file* | Gives the md5sum hash of the *file* |
+| cat *filename* | Print file contents on terminal | 
+
 
 # Reconnaissance and Information gathering
 
@@ -151,7 +155,14 @@ netcat is a simple unix utility which reads and writes data across net‐work co
 | Meterpreter commands | Description |
 | --- | --- |
 | help | Open help |
-
+| background | background the session |
+| sessions | Show all sessions |
+| sessions -i *n*  | Interact with session *n* |
+| guid | Get session id |
+| getuid | Get user id |
+| download *filename* | download the file |
+| upload *filename* | upload the file |
+| shell | Get shell |
 
 ***Eternalblue***
 
@@ -243,7 +254,7 @@ netcat is a simple unix utility which reads and writes data across net‐work co
 
 ***Set the same payload as payload that the target will execute.***
 
-***Virustotal***
+## Virustotal
 
 *Website*
 
@@ -259,7 +270,7 @@ Start command : ***veil***
 
 Run : **resource *rc* file generated**, in msfconsole for listening
 
-**B2E**
+## B2E
 	
 	Tool for converting .bat file to .exe
 	
@@ -268,4 +279,30 @@ Run : **resource *rc* file generated**, in msfconsole for listening
 
 ## TheFatRat
 
-	
+	Download from Github.
+
+	Use as root.
+
+**hexeditor** *payload* : Opens the payload's binary. Can change the unnecessary binary of payload to change its hash.
+
+## Making a payload hidden behind another file
+
+- Create Icon file : .ico extension
+- Select both original payload and file that opens in foreground, right click and select  "Add to archive"
+- Archive format : Select ZIP
+- Select : Create SFX archive
+- Name the new file
+- Advanced tab : Click SFX options
+	- Update tab : 
+		- Click extract and update files
+		- Click Overwrite all files
+	- Text and icon : Load icon in "Load SFX icon"
+	- Mode : 
+		- Silent mode : Click "Hide all"
+		- Click unpack to temporary folder
+	- Setup : In "Run after extraction" enter both file names
+	- Click OK
+- Click OK again
+
+# Post Exploitation
+
