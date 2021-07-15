@@ -1,0 +1,7 @@
+Turning into exe (Windows env):
+
+(Install pyinstaller)
+
+pyinstaller filename.py --onefile --noconsole
+
+(All libraries should be installed beforehand)

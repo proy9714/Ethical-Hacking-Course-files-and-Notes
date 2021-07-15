@@ -14,7 +14,9 @@
 | ps | Lists all processes running on windows |
 | md5sum *file* | Gives the md5sum hash of the *file* |
 | cat *filename* | Print file contents on terminal | 
+| systemctl start apache2 | systemctl?? | 
 
+Apache2 files : /var/www/html
 
 # Reconnaissance and Information gathering
 
@@ -155,7 +157,7 @@ netcat is a simple unix utility which reads and writes data across net‐work co
 | Meterpreter commands | Description |
 | --- | --- |
 | help | Open help |
-| background | background the session |
+| background/bg | background the session |
 | sessions | Show all sessions |
 | sessions -i *n*  | Interact with session *n* |
 | guid | Get session id |
@@ -163,6 +165,7 @@ netcat is a simple unix utility which reads and writes data across net‐work co
 | download *filename* | download the file |
 | upload *filename* | upload the file |
 | shell | Get shell |
+| ps | All currently running processes |
 
 ***Eternalblue***
 
@@ -305,4 +308,21 @@ Run : **resource *rc* file generated**, in msfconsole for listening
 - Click OK again
 
 # Post Exploitation
+
+## Privilege escalation
+
+**Metasploit**
+
+search bypassuac : uac=User account control
+
+search *year* : List out all modules that came out that year
+
+getsystem : Try to get system level account
+
+***Use a different listen port compared to port on attacked machine.***
+
+## Persistence
+
+search persistence (on metasploit)
+
 
