@@ -326,3 +326,26 @@ getsystem : Try to get system level account
 search persistence (on metasploit)
 
 
+# Website penetration testing
+
+Can practice on metasploitable DVWA. Open the ip of metasploitable in web browser.
+
+## Dirb
+
+dirb http://***ip***
+
+## Burpsuite
+
+*--- Pre-installed in Kali ---*
+
+Intercepts and change http requests and responses.
+
+**Have to change proxy settings manually in web browser.**
+
+To access https open:
+
+- http://burp
+- Download CA certificate
+- In web browser import the certificate (Check privacy section) and click trust this CA.
+
+To prevent manually forwarding packets: Turn Intercept Off in the suite.
