@@ -349,3 +349,16 @@ To access https open:
 - In web browser import the certificate (Check privacy section) and click trust this CA.
 
 To prevent manually forwarding packets: Turn Intercept Off in the suite.
+
+## ShellShock (2014)
+
+- Google -> pentesterlab shellshock
+- Files -> Download ISO
+- Create virtual machine using ISO (Linux, Other linux 32bit)
+- Start burpsuite and firefox in kali
+- Intercept should be turned off (burpsuite - target - proxy)
+- Start the new VM
+- Go to the ip of the VM in firefox
+- Find the cgi script in burpsuite
+- Click on response (The output is similar to *uname -a*)
+- 
