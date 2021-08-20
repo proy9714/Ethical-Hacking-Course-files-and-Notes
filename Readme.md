@@ -2,5 +2,6 @@
 
 ## Useful websites/ github repos:
 
--   https://github.com/sundowndev/hacker-roadmap
--   https://start.me/p/PwmnBd/web
+-   Ethical Hacking Resources : https://github.com/sundowndev/hacker-roadmap
+-   Ethical Hacking Resources : https://start.me/p/PwmnBd/web
+-   Cloudfare Learning Center : https://www.cloudflare.com/learning/

