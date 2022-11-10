@@ -6,7 +6,7 @@
 
 ## Useful websites/ github repos:
 
--   Ethical Hacking Resources : https://github.com/sundowndev/hacker-roadmap
--   Ethical Hacking Resources : https://start.me/p/PwmnBd/web
--   Cloudfare Learning Center : https://www.cloudflare.com/learning/
--   Metasploit Cheat-Sheet : https://github.com/security-cheatsheet/metasploit-cheat-sheet
+-   [Ethical Hacking Resources](https://github.com/sundowndev/hacker-roadmap)
+-   [Ethical Hacking Resources](https://start.me/p/PwmnBd/web)
+-   [Cloudfare Learning Center](https://www.cloudflare.com/learning/)
+-   [Metasploit Cheat-Sheet](https://github.com/security-cheatsheet/metasploit-cheat-sheet)
